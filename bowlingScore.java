@@ -13,18 +13,18 @@ public class bowlingScore {
                 totalScore += scores[i][1];
                 //handles if the next roll was a strike
                 if (scores[i + 1][0] == 10) {
-                    if(i!=8){
-                        totalScore+=scores[i+1][0];
-                        totalScore+=scores[i+2][0];
+                    if (i != 8) {
+                        totalScore += scores[i + 1][0];
+                        totalScore += scores[i + 2][0];
                         //handles if the next frame is the second last frame and a strike was the  first roll
-                    }else{
-                        totalScore+=scores[i+1][0];
-                        totalScore+=scores[i+1][1];
+                    } else {
+                        totalScore += scores[i + 1][0];
+                        totalScore += scores[i + 1][1];
                     }
-                }else{
+                } else {
                     //handles if you didnt get a strike on the next frame
-                    totalScore+=scores[i+1][0];
-                    totalScore+=scores[i+1][1];
+                    totalScore += scores[i + 1][0];
+                    totalScore += scores[i + 1][1];
                 }
                 //code for handling if the player scores a spare || adds the current frame rolls plus the next roll
             } else if (scores[i][0] + scores[i][1] == 10) {
