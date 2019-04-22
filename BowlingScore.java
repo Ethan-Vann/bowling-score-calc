@@ -55,6 +55,6 @@ public class BowlingScore {
         int[] scores3 = {2, 7, 3, 4, 2, 7, 4, 6, 10, 0, 10, 0, 2, 7, 4, 6, 1, 9, 4, 2, 0};
         System.out.println("checking all strikes answer should be 300, answer: " + bowlingCalc(scores));
         System.out.println("checking all spares answer should be 140, answer: " + bowlingCalc(scores2));
-        System.out.println("checking random rolls 1 answer should be 126, answer: " + bowlingCalc(scores3));
+        System.out.println("checking random rolls answer should be 126, answer: " + bowlingCalc(scores3));
     }
 }
